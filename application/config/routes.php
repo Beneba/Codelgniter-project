@@ -49,6 +49,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+
+
+
+
+/**
+ * NOTE FROM IBRAHIM
+ * 
+ * THE DEFAULT ROUTE SHOULD ALWAYS BE THE LAST 
+ * */
+
+//this ensure that the getUserData function or method in the 
+//User.php controller file is always called 
+$route['users/getUserData'] = 'users/getUserData';
 $route['default_controller'] = 'Users';
-$route['404_override'] = '';
-$route['translate_uri_dashes'] = FALSE;
